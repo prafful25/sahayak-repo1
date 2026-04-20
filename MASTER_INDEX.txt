@@ -1,0 +1,206 @@
+============================================================================
+SAHAYAK DATA SERVICES — REPO 1 MASTER INDEX
+Extensions of Existing 12 APIs
+Total: 51 APIs across 11 existing containers
+============================================================================
+
+PURPOSE OF THIS REPOSITORY
+------------------------------------------------------------
+This repository contains all API specs that extend one of the 12 existing
+Category 1 API containers already defined in the Sahayak Co-Founder Atlas.
+Each API in this repo adds a new endpoint to an existing FastAPI container
+— no new domain provisioning, no new Docker container, no new SSL cert.
+Every spec reuses existing scraper infrastructure on Phase 1-3 VPS.
+
+============================================================================
+APIS BY PARENT CONTAINER
+============================================================================
+
+CONTAINER: AgriPriceAPI
+Domain   : https://agri.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [30    ] Cotton MSP & CCI Price API
+           Source: Vol 1/2 | File: spec_30_Cotton_MSP_and_CCI_Price_API.txt
+  [35    ] FPO Registration API
+           Source: Vol 1/2 | File: spec_35_FPO_Registration_API.txt
+  [36    ] MSP Alert API
+           Source: Vol 1/2 | File: spec_36_MSP_Alert_API.txt
+  [37    ] WDRA Warehouse API
+           Source: Vol 1/2 | File: spec_37_WDRA_Warehouse_API.txt
+  [38    ] Agmark Certification API
+           Source: Vol 1/2 | File: spec_38_Agmark_Certification_API.txt
+  [39    ] Food Inflation Index API
+           Source: Vol 1/2 | File: spec_39_Food_Inflation_Index_API.txt
+  [V3_33 ] CIB&RC Pesticide Registration API
+           Source: Vol 3 | File: spec_V3_33_CIBandRC_Pesticide_Registration_API.txt
+  [V3_41 ] NDDB/NDA Dairy Cooperative & Milk Price API
+           Source: Vol 3 | File: spec_V3_41_NDDB_NDA_Dairy_Cooperative_and_Milk_Price_API.txt
+           APIs in this container: 8
+
+CONTAINER: ComplianceAPI.in
+Domain   : https://compliance.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [16    ] EPF Establishment API
+           Source: Vol 1/2 | File: spec_16_EPF_Establishment_API.txt
+  [43    ] ESIC Rate API
+           Source: Vol 1/2 | File: spec_43_ESIC_Rate_API.txt
+  [45    ] CGTMSE Guarantee API
+           Source: Vol 1/2 | File: spec_45_CGTMSE_Guarantee_API.txt
+  [V3_20 ] State Minimum Wage Notification API
+           Source: Vol 3 | File: spec_V3_20_State_Minimum_Wage_Notification_API.txt
+  [V3_21 ] Shram Suvidha Establishment Compliance API
+           Source: Vol 3 | File: spec_V3_21_Shram_Suvidha_Establishment_Compliance_API.txt
+           APIs in this container: 5
+
+CONTAINER: EduDataAPI.in
+Domain   : https://edu.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [05    ] UGC Recognition API
+           Source: Vol 1/2 | File: spec_05_UGC_Recognition_API.txt
+  [06    ] AICTE Approval API
+           Source: Vol 1/2 | File: spec_06_AICTE_Approval_API.txt
+  [07    ] CBSE/ICSE Affiliation API
+           Source: Vol 1/2 | File: spec_07_CBSE_ICSE_Affiliation_API.txt
+  [28    ] Fake University Alert API
+           Source: Vol 1/2 | File: spec_28_Fake_University_Alert_API.txt
+           APIs in this container: 4
+
+CONTAINER: ExportTradeAPI
+Domain   : https://export.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [14    ] Steel Import Duty API
+           Source: Vol 1/2 | File: spec_14_Steel_Import_Duty_API.txt
+  [19    ] Precious Metal Import Duty API
+           Source: Vol 1/2 | File: spec_19_Precious_Metal_Import_Duty_API.txt
+  [20    ] ROSL & Drawback Rate API
+           Source: Vol 1/2 | File: spec_20_ROSL_and_Drawback_Rate_API.txt
+  [41    ] Anti-Dumping Duty API
+           Source: Vol 1/2 | File: spec_41_Anti-Dumping_Duty_API.txt
+  [42    ] Custom Duty Calculator API
+           Source: Vol 1/2 | File: spec_42_Custom_Duty_Calculator_API.txt
+  [V3_40 ] MPEDA Seafood Exporter Registry API
+           Source: Vol 3 | File: spec_V3_40_MPEDA_Seafood_Exporter_Registry_API.txt
+  [V3_42 ] DGFT IEC Code Verification API
+           Source: Vol 3 | File: spec_V3_42_DGFT_IEC_Code_Verification_API.txt
+  [V3_43 ] Star Export House Status Verification API
+           Source: Vol 3 | File: spec_V3_43_Star_Export_House_Status_Verification_API.txt
+  [V3_44 ] India EXIM Trade Statistics API
+           Source: Vol 3 | File: spec_V3_44_India_EXIM_Trade_Statistics_API.txt
+           APIs in this container: 9
+
+CONTAINER: FSSAIVerifyAPI
+Domain   : https://fssai.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [25    ] Food Recall & Alert API
+           Source: Vol 1/2 | File: spec_25_Food_Recall_and_Alert_API.txt
+           APIs in this container: 1
+
+CONTAINER: GreenComplianceAPI
+Domain   : https://green.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [22    ] Environmental Clearance API
+           Source: Vol 1/2 | File: spec_22_Environmental_Clearance_API.txt
+  [40    ] Construction Material Price API
+           Source: Vol 1/2 | File: spec_40_Construction_Material_Price_API.txt
+  [V3_35 ] CPCB/PCB Consent to Operate API
+           Source: Vol 3 | File: spec_V3_35_CPCB_PCB_Consent_to_Operate_API.txt
+  [V3_36 ] EPR Registration (E-Waste & Plastic) API
+           Source: Vol 3 | File: spec_V3_36_EPR_Registration_for_E-Waste_and_Plastic_Packaging_A.txt
+           APIs in this container: 4
+
+CONTAINER: GSTRateAPI
+Domain   : https://gst.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [09    ] E-Way Bill Rules API
+           Source: Vol 1/2 | File: spec_09_E-Way_Bill_Rules_API.txt
+  [10    ] Food GST HSN Rate API
+           Source: Vol 1/2 | File: spec_10_Food_GST_HSN_Rate_API.txt
+  [11    ] GST on Advertising Services API
+           Source: Vol 1/2 | File: spec_11_GST_on_Advertising_Services_API.txt
+  [12    ] GST Rate — Jewellery API
+           Source: Vol 1/2 | File: spec_12_GST_Rate_—_Jewellery_API.txt
+  [13    ] GST Rate — Beauty Services API
+           Source: Vol 1/2 | File: spec_13_GST_Rate_—_Beauty_Services_API.txt
+           APIs in this container: 5
+
+CONTAINER: MCA/Legal Filings API
+Domain   : https://mca.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [44    ] Insolvency Proceedings API
+           Source: Vol 1/2 | File: spec_44_Insolvency_Proceedings_API.txt
+  [V3_18 ] MCA Company Director & DIN Verification API
+           Source: Vol 3 | File: spec_V3_18_MCA_Company_Director_and_DIN_Verification_API.txt
+  [V3_19 ] MCA Charge Registry API
+           Source: Vol 3 | File: spec_V3_19_MCA_Charge_Registry_API.txt
+  [V3_28 ] MCA CSR Spend Tracker API
+           Source: Vol 3 | File: spec_V3_28_MCA_CSR_Spend_Tracker_API.txt
+           APIs in this container: 4
+
+CONTAINER: MedRegAPI.in
+Domain   : https://med.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [08    ] NMC Medical College API
+           Source: Vol 1/2 | File: spec_08_NMC_Medical_College_API.txt
+  [17    ] CDSCO Drug Approval API
+           Source: Vol 1/2 | File: spec_17_CDSCO_Drug_Approval_API.txt
+  [18    ] Clinical Trial Registry API
+           Source: Vol 1/2 | File: spec_18_Clinical_Trial_Registry_API.txt
+  [21    ] Drug Price Control API
+           Source: Vol 1/2 | File: spec_21_Drug_Price_Control_API.txt
+  [V3_22 ] NABH Hospital Accreditation API
+           Source: Vol 3 | File: spec_V3_22_NABH_Hospital_Accreditation_API.txt
+  [V3_23 ] NMC Registered Doctor Verification API
+           Source: Vol 3 | File: spec_V3_23_NMC_Registered_Doctor_Verification_API.txt
+  [V3_24 ] eRaktkosh Blood Bank Registry API
+           Source: Vol 3 | File: spec_V3_24_eRaktkosh_Blood_Bank_Registry_API.txt
+  [V3_25 ] CGHS Empanelled Hospital & Rate API
+           Source: Vol 3 | File: spec_V3_25_CGHS_Empanelled_Hospital_and_Rate_API.txt
+  [V3_37 ] CDSCO Medical Device Registration (MDR) API
+           Source: Vol 3 | File: spec_V3_37_CDSCO_Medical_Device_Registration_(MDR)_API.txt
+           APIs in this container: 9
+
+CONTAINER: RERADataAPI.in
+Domain   : https://rera.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [15    ] RERA Agent Verification API
+           Source: Vol 1/2 | File: spec_15_RERA_Agent_Verification_API.txt
+           APIs in this container: 1
+
+CONTAINER: StartupIndia API
+Domain   : https://startup.sahayakonline.co.in/v1/
+------------------------------------------------------------
+  [V3_31 ] DPIIT Startup India Recognition API
+           Source: Vol 3 | File: spec_V3_31_DPIIT_Startup_India_Recognition_API.txt
+           APIs in this container: 1
+
+============================================================================
+BUILD STRATEGY
+============================================================================
+All specs in this repo are additive endpoint additions.
+No new containers. No new domain SSL. No new VPS configuration.
+Sequence: (1) Add scraper for new data source to existing n8n workflow
+          (2) Add new endpoint to existing FastAPI container
+          (3) Update Razorpay billing to expose new tier
+          (4) Update Redis cache key namespace
+
+Container count : 11 (all existing)
+New endpoints   : 51
+New Docker containers required: 0
+New domains/SSL required: 0
+
+EXCLUDED FROM THIS REPO (Group A — Already Built):
+  01. FSSAI License Verification API  → fssai.sahayakonline.co.in
+  02. Mandi Price API                 → agri.sahayakonline.co.in
+  03. NAAC Accreditation API          → edu.sahayakonline.co.in
+  04. NIRF Ranking API                → edu.sahayakonline.co.in
+These 4 are production-live. Market and sell them, do not rebuild.
+
+============================================================================
+LEGAL NOTE
+============================================================================
+All 51 APIs cleared. All use statutory Indian government registry data.
+DPDP Act S.3(c)(ii) applies — statutory public data is exempt.
+No personal consumer data collected or served by any API in this repo.
+
+Sahayak Data Services | Prafful Garg | Meerut, Uttar Pradesh | April 2026
+============================================================================
