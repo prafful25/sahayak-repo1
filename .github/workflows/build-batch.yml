@@ -4,18 +4,26 @@ on:
   workflow_dispatch:
     inputs:
       container:
-        description: 'Container name'
+        description: Container name
         required: true
         type: string
       api_name:
-        description: 'Spec filename'
+        description: Spec filename
         required: true
         type: string
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Show inputs
-        run: echo 'container=${{ github.event.inputs.container }} api=${{ github.event.inputs.api_name }}'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install aider-chat fastapi uvicorn psycopg2-binary redis pytest pytest-asyncio python-dotenv pyda
